@@ -6,8 +6,8 @@ public class NoNullArrayList<T> extends OrderedArrayList<T>{
 
   }
   public NoNullArrayList(int startVal){
-    super(startVal)
-    
+    super(startVal);
+
 
   }
 
