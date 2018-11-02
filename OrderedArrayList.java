@@ -1,30 +1,14 @@
 import java.util.ArrayList;
+public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T> {
 
-public class NoNullArrayList<T> extends OrderedArrayList<T>{
-  public NoNullArrayList(){
+	public OrderedArrayList() {
 
-  }
-  public NoNullArrayList(int startVal){
-    super(startVal);
-  }
+	}
 
-  public set() {
+	public OrderedArrayList(int startingCapacity) {
+		super(startingCapacity);
+	}
 
-  }
 
-  public add(T value){
-    if (value == null)
-      throw new IllegalArgumentException();
-    else
-      super.add(value);
-      return true;
-  }
 
-  public void add(int index, T value){
-    if (value == null)
-      throw new IllegalArgumentException();
-    else
-      super.add(index,value);
-  }
-
-}
+} 
